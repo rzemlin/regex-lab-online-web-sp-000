@@ -8,7 +8,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   counter = 0
-  if text.scan(/^un\w*ing$/)
+  if text.scan(/\bun\w*ing\b/)
     return true
     counter += 1
   else
